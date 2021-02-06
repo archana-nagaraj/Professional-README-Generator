@@ -7,7 +7,7 @@ const questions = [
      // Project-Title
      {
         type: 'input',
-        name: 'name',
+        name: 'title',
         message: 'What is the title or name of your project? (Required)',
         // Add validation to make sure user entered the input
         validate: titleInput => {
@@ -22,7 +22,7 @@ const questions = [
     // Project Description
     {
         type: 'input',
-        name: 'project-description',
+        name: 'description',
         message: 'Enter a brief description about your project:? (Required)',
         //Add validation to make sure user entered the input
         validate: description => {
@@ -37,7 +37,7 @@ const questions = [
     // Project Installation
     {
         type: 'input',
-        name: 'project-installation',
+        name: 'installation',
         message: "Provide the command to install the project: (Required)",
          //Add validation to make sure user entered the input
          validate: installationCommands => {
@@ -52,7 +52,7 @@ const questions = [
     // Project Usage
     {
         type: 'input',
-        name: 'project-usage',
+        name: 'usage',
         message: "Provide instructions or examples to use the project:(Required)",
          //Add validation to make sure user entered the input
         validate: installationCommands => {
@@ -67,7 +67,7 @@ const questions = [
     // Project License
     {
         type: 'checkbox',
-        name: 'project-license',
+        name: 'license',
         message: "Choose the license for the project:",
         // Resource: https://choosealicense.com/licenses/
         choices: [
@@ -84,21 +84,21 @@ const questions = [
     // Project Contribution
     {
         type: 'input',
-        name: 'project-contribution',
+        name: 'contribution',
         message: "How can one contribute to the project?:(optional)"
         // No validation for optional inputs
     },
      // Project Tests
      {
         type: 'input',
-        name: 'project-tests',
+        name: 'tests',
         message: "Mention any tests written to test the project:(optional)"
         // No validation for optional inputs
     },
      // Project questions
      {
         type: 'input',
-        name: 'project-questions',
+        name: 'questions',
         message: "Whom to contact for any questions about the project:(optional)"
         // No validation for optional inputs
     }
@@ -106,7 +106,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, JSON.stringify(data, null, '\t'), function(err) {
+    fs.writeFile(fileName, data, function(err) {
         if (err) {
             return console.log(err);
         }
@@ -120,8 +120,8 @@ console.log("Welcome! Please answer the questions you see in the prompt");
     inquirer
     .prompt(questions)
     .then(answers => {
-        const filename = answers.name.toLowerCase().split(' ').join('') + '.json';
-        writeToFile(filename, answers);
+        const readmeContent = generateMarkdown(answers);
+       writeToFile('./demo.md', readmeContent);
     })
     .catch(error => {
         if(error.isTtyError) {
