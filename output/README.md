@@ -6,28 +6,30 @@
      Readme Generator
     
   ##  Description
-    This is a demo project used to dynamically generate readme.md file using command line
+    This is a demo project to create a readme.md file dynamically 
 
 
   ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contribution)
-    * [Tests](#tests)
-    * [Questions](#questions)
+
+  * [Description](#description)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contribution](#contribution)
+  * [Usage](#usage)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
 
   ## Installation
 
   To install dependencies, run the below command :
 
-    npm init
+    nom init
 
 
 
   ## Usage
-     run node index.js. Refer readme.md for the project for more info
+     run the command node index.js
 
 
   ## License
@@ -37,8 +39,8 @@
   Refer https://opensource.org/licenses/MIT for more detailed info 
     
   
-  ## Contributing
-     none
+  ## Contribution
+     Since this is a demo project no contributions are allowed
 
   ## Tests
      none

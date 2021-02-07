@@ -72,12 +72,14 @@ function generateMarkdown(data) {
 
 
   ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contribution)
-    * [Tests](#tests)
-    * [Questions](#questions)
+
+  * [Description](#description)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contribution](#contribution)
+  * [Usage](#usage)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
 
   ## Installation
@@ -98,7 +100,7 @@ function generateMarkdown(data) {
   Refer ${renderLicenseLink(data.license)} for more detailed info 
     
   
-  ## Contributing
+  ## Contribution
      ${data.contributing}
 
   ## Tests
