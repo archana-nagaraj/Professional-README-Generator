@@ -39,7 +39,7 @@ Demo video: [Professional README Generator Demo](https://youtu.be/GWOUJAWg_Ow)
 To install dependencies, run the following:
 
       
-      npm i
+      npm init
       
 
 ## Usage
