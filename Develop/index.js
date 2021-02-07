@@ -55,38 +55,38 @@ const questions = [
         name: 'usage',
         message: "Provide instructions or examples to use the project:(Required)",
          //Add validation to make sure user entered the input
-        validate: installationCommands => {
-            if (installationCommands) {
+        validate: usage => {
+            if (usage) {
                 return true;
             } else {
-                console.log('Please enter the necessary commands for installation');
+                console.log('Please enter the necessary instructions for usage');
                 return false;
             }
         }
     }, 
     // Project License
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: "Choose the license for the project:",
         // Resource: https://choosealicense.com/licenses/
         choices: [
-            "GNU AGPLv3",
             "GNU GPLv3",
-            "GNU LGPLv3",
             "Mozilla Public License 2.0",
             "Apache License 2.0",
             "MIT License",
             "Boost Software License 1.0",
-            "The Unlicense"
+            "The Unlicense",
+            "BSD 3-Clause"
         ]
     },
-    // Project Contribution
+    // Project Contributing
     {
         type: 'input',
-        name: 'contribution',
+        name: 'contributing',
         message: "How can one contribute to the project?:(optional)"
         // No validation for optional inputs
+        
     },
      // Project Tests
      {
@@ -95,12 +95,33 @@ const questions = [
         message: "Mention any tests written to test the project:(optional)"
         // No validation for optional inputs
     },
-     // Project questions
-     {
+       // github username
+    {
         type: 'input',
-        name: 'questions',
-        message: "Whom to contact for any questions about the project:(optional)"
-        // No validation for optional inputs
+        name: 'username',
+        message: "Enter your github username:[Required]",
+        validate: username => {
+            if (username) {
+                return true;
+            } else {
+                console.log('Please enter the github username');
+                return false;
+            }
+        }
+    },
+       // email
+    {
+        type: 'input',
+        name: 'email',
+        message: "Enter your email address:[Required]",
+        validate: email => {
+            if (email) {
+                return true;
+            } else {
+                console.log('Please enter the email address');
+                return false;
+            }
+        }
     }
 ];
 
@@ -121,7 +142,7 @@ console.log("Welcome! Please answer the questions you see in the prompt");
     .prompt(questions)
     .then(answers => {
         const readmeContent = generateMarkdown(answers);
-       writeToFile('./demo.md', readmeContent);
+       writeToFile('./README.md', readmeContent);
     })
     .catch(error => {
         if(error.isTtyError) {
