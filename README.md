@@ -21,12 +21,10 @@ This project is a command-line application that dynamically generates a professi
 
 Demo video: [Professional README Generator Demo](https://youtu.be/GWOUJAWg_Ow)
 
-![README-Generator-Demo]()
-
-![terminal-screen]()
+![terminal-screen](./images/prompts.png)
 
 ### Output Readme
-![demo-readme-screen]()
+![demo-readme-screen](./images/generatedREADME.png)
 
 
 ## Technologies
@@ -40,6 +38,7 @@ To install dependencies, run the following:
 
       
       npm init
+      npm install inquirer
       
 
 ## Usage

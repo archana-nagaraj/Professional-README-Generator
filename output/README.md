@@ -6,7 +6,7 @@
      Readme Generator
     
   ##  Description
-    This is a demo project to create a readme.md file dynamically 
+    This is a command -line application used to generate README.md file dynamically
 
 
   ## Table of Contents
@@ -24,12 +24,12 @@
 
   To install dependencies, run the below command :
 
-    nom init
+    npm init
 
 
 
   ## Usage
-     run the command node index.js
+     node index.js
 
 
   ## License
@@ -40,7 +40,7 @@
     
   
   ## Contribution
-     Since this is a demo project no contributions are allowed
+     none
 
   ## Tests
      none

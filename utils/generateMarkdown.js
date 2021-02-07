@@ -96,7 +96,7 @@ function generateMarkdown(data) {
 
   ## License
 
-  This repository is covered under the license ' ${renderLicenseSection(data.license)} ' 
+  This repository is covered under the license '${renderLicenseSection(data.license)}' 
   Refer ${renderLicenseLink(data.license)} for more detailed info 
     
   
