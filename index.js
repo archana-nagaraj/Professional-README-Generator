@@ -142,7 +142,7 @@ console.log("Welcome! Please answer the questions you see in the prompt");
     .prompt(questions)
     .then(answers => {
         const readmeContent = generateMarkdown(answers);
-       writeToFile('./README.md', readmeContent);
+       writeToFile('./output/README.md', readmeContent);
     })
     .catch(error => {
         if(error.isTtyError) {
