@@ -1,50 +1,61 @@
+# Professional README Generator
 
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
-
-  #  Project Title
-     ttttttttttttt
-    
-  ##  Description
-    sdf
+[![License: MIT](https://img.shields.io/github/license/tiffany-brand/professional-README-generator?style=plastic)](./LICENSE)
 
 
-  ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contribution)
-    * [Tests](#tests)
-    * [Questions](#questions)
+## Description
+
+This project is a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. When the application runs, it presents a series of prompts in the command line to the user to fill in different sections in the README. Once the user is done answering all the questions, the final readme is generated and stored in the output folder.
+
+## Table of Contents
+
+* [Description](#description)
+* [Demonstration](#demonstration)
+* [Technologies](#technologies)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Questions](#questions)
+
+### Demonstration
+
+Demo video: [Professional README Generator Demo](https://youtu.be/GWOUJAWg_Ow)
+
+![README-Generator-Demo]()
+
+![terminal-screen]()
+
+### Output Readme
+![demo-readme-screen]()
 
 
-  ## Installation
+## Technologies
 
-  To install dependencies, run the below command :
+* [Node.js](https://nodejs.org/)
+* [Inquirer.js](https://www.npmjs.com/package/inquirer)
 
-    sdf
+## Installation
+
+To install dependencies, run the following:
+
+      
+      npm i
+      
+
+## Usage
+
+After installing the dependencies, run the application with 
 
 
-
-  ## Usage
-     sd
+      node index.js
 
 
-  ## License
+## License
 
-  This repository is covered under the license ' GNU GPLv3
-   '. 
-  Refer https://www.gnu.org/licenses/gpl-3.0 for more detailed info 
-    
-  
-  ## Contributing
-     sdf
+This repository is licensed under the [MIT license](./LICENSE).
 
-  ## Tests
-     sdf
 
-  ## Questions
-     If you have any questions reach me @ 
-     Email: sfd
-     Githublink: https://github.com/sfd
-  
+## Questions
+
+For any questions about the project/repository please contact me @ [archana.nagaraj@gmail.com](mailto:archana.nagaraj@gmail.com) </br>
+GitHub @ [archana-nagaraj](https://github.com/archana-nagaraj) 
