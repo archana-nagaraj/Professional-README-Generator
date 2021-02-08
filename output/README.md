@@ -6,7 +6,7 @@
      Readme Generator
     
   ##  Description
-    This is a command -line application used to generate README.md file dynamically
+    This is a command line application that dynamically generates the markdown file
 
 
   ## Table of Contents
@@ -29,13 +29,13 @@
 
 
   ## Usage
-     node index.js
+     run the command node index.js
 
 
   ## License
 
-  This repository is covered under the license ' MIT License
-   ' 
+  This repository is covered under the license 'MIT License
+  ' 
   Refer https://opensource.org/licenses/MIT for more detailed info 
     
   
@@ -43,7 +43,7 @@
      none
 
   ## Tests
-     none
+     no tests written yet
 
   ## Questions
      If you have any questions reach me @ 
