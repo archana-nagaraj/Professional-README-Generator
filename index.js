@@ -131,7 +131,7 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err);
         }
-        console.log('Success!');
+        console.log('Success! README.md file is created in the output folder');
     });
 }
 

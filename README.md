@@ -19,7 +19,7 @@ This project is a command-line application that dynamically generates a professi
 
 ### Demonstration
 
-Demo video: [Professional README Generator Demo](https://youtu.be/GWOUJAWg_Ow)
+Demo video: [Professional README Generator Demo](https://drive.google.com/file/d/19Mf32ELi1Z8TKxnsnpmhzUMxencKyoFJ/view?usp=sharing)
 
 ![terminal-screen](./images/prompts.png)
 
