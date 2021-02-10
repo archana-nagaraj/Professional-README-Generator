@@ -6,7 +6,7 @@
      Readme Generator
     
   ##  Description
-    This is a command line application that dynamically generates the markdown file
+    This is a command -line application which generates a professional readme file dynamically using user's inputs
 
 
   ## Table of Contents
@@ -43,10 +43,10 @@
      none
 
   ## Tests
-     no tests written yet
+     none
 
-  ## Questions
-     If you have any questions reach me @ 
-     Email: archana.nagaraj@gmail.com
-     Githublink: https://github.com/archana-nagaraj
-  
+## Questions
+
+If you have any questions reach me @ 
+Email: [archana.nagaraj@gmail.com](mailto:archana.nagaraj@gmail.com)
+Github : [archana-nagaraj](https://github.com/archana-nagaraj)

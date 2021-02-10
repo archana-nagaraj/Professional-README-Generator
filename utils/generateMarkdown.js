@@ -106,11 +106,12 @@ function generateMarkdown(data) {
   ## Tests
      ${data.tests}
 
-  ## Questions
-     If you have any questions reach me @ 
-     Email: ${data.email}
-     Githublink: https://github.com/${data.username}
-  `;
+## Questions
+
+If you have any questions reach me @ 
+Email: [archana.nagaraj@gmail.com](mailto:${data.email})
+Github : [archana-nagaraj](https://github.com/${data.username})
+`;
 }
 
 module.exports = generateMarkdown;
